@@ -125,8 +125,6 @@
 				A02597C41E21471200C41FE2 /* View */,
 				A02597A81E20F84800C41FE2 /* Models */,
 				A02597A31E20F0F600C41FE2 /* Controller */,
-				A02597751E20EC0E00C41FE2 /* AppDelegate.swift */,
-				A025977C1E20EC0E00C41FE2 /* Assets.xcassets */,
 				A02597811E20EC0E00C41FE2 /* Info.plist */,
 			);
 			path = WesterosAtWar;
@@ -153,6 +151,7 @@
 		A02597A31E20F0F600C41FE2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A02597751E20EC0E00C41FE2 /* AppDelegate.swift */,
 				A02597A91E20F87C00C41FE2 /* AppConstants.swift */,
 				A02597AA1E20F87C00C41FE2 /* NetworkController.swift */,
 				A02597AB1E20F87C00C41FE2 /* KingsTableViewController.swift */,
@@ -177,6 +176,7 @@
 		A02597C41E21471200C41FE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A025977C1E20EC0E00C41FE2 /* Assets.xcassets */,
 				A0DF1FC11E217EF20027F0C2 /* fontawesome-webfont.ttf */,
 				A02597CB1E216F4600C41FE2 /* filter.png */,
 				A02597C71E21519600C41FE2 /* crown.png */,

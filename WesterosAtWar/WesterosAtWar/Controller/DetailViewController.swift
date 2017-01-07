@@ -44,8 +44,6 @@ class DetailViewController : UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        //let cell = self.additionalDetailsTable.dequeueReusableCellWithIdentifier(self.cellIdentifier) as! UITableViewCell
-        
         let cell = UITableViewCell(style:.Subtitle, reuseIdentifier: self.cellIdentifier)
         switch indexPath.row {
         case 0:
