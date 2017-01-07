@@ -183,9 +183,12 @@ class ScoringEngine {
         }
     }
     
-    func getKingsDetials() -> [King]{
+    func getKingsDetials(predicate : NSPredicate?) -> [King]{
         let objectContext = DataController.sharedInstance.managedObjectContext
         let kingsFetch = NSFetchRequest(entityName: coreDataBaseConstants.kingTableName)
+        if (predicate != nil){
+            kingsFetch.predicate = predicate
+        }
         do {
             let fetchedKings = try objectContext.executeFetchRequest(kingsFetch) as! [King]
             return fetchedKings
@@ -194,5 +197,37 @@ class ScoringEngine {
             fatalError("Failed to fetch battles: \(error)")
         }
     }
+    
+    func findStrengthInBattleType(kingModel: King) -> String{
+        do {
+            var finalDict : Dictionary<String, Int> = Dictionary<String, Int>()
+            let objectContext = DataController.sharedInstance.managedObjectContext
+            let battlesFetch = NSFetchRequest(entityName: coreDataBaseConstants.battleTableName)
+            battlesFetch.predicate = NSPredicate(format: coreDataBaseConstants.winnerKey + " == %@ ", (kingModel.kingName ?? ""))
+            let fetchedBattles = try objectContext.executeFetchRequest(battlesFetch) as! [Battle]
+            for battle in fetchedBattles{
+                if finalDict[battle.battleType ?? ""] != nil{
+                    finalDict[battle.battleType ?? ""] = finalDict[battle.battleType ?? ""]! + 1
+                }else{
+                    finalDict[battle.battleType ?? ""] = 1
+                }
+            }
+            let componentArray = [Int] (finalDict.values)
+            let maxCount = componentArray.maxElement()
+            var finalString = ""
+            for (key,value) in finalDict{
+                if (value == maxCount){
+                    finalString = key
+                    break
+                }
+            }
+            return finalString
+            
+        } catch {
+            fatalError("Failed to fetch battles: \(error)")
+        }
+    }
+    
+    
     
 }

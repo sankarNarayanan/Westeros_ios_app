@@ -23,6 +23,9 @@
 		A02597C31E2143A200C41FE2 /* ScoringEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597C21E2143A200C41FE2 /* ScoringEngine.swift */; };
 		A02597C61E21475B00C41FE2 /* KingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597C51E21475B00C41FE2 /* KingTableViewCell.swift */; };
 		A02597C81E21519600C41FE2 /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = A02597C71E21519600C41FE2 /* crown.png */; };
+		A02597CA1E216BAE00C41FE2 /* UtilitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597C91E216BAE00C41FE2 /* UtilitiesController.swift */; };
+		A02597CC1E216F4600C41FE2 /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = A02597CB1E216F4600C41FE2 /* filter.png */; };
+		A02597CE1E21797800C41FE2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597CD1E21797800C41FE2 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,10 @@
 		A02597C21E2143A200C41FE2 /* ScoringEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoringEngine.swift; path = Controller/ScoringEngine.swift; sourceTree = "<group>"; };
 		A02597C51E21475B00C41FE2 /* KingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KingTableViewCell.swift; path = View/KingTableViewCell.swift; sourceTree = "<group>"; };
 		A02597C71E21519600C41FE2 /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		A02597C91E216BAE00C41FE2 /* UtilitiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UtilitiesController.swift; path = Controller/UtilitiesController.swift; sourceTree = "<group>"; };
+		A02597CB1E216F4600C41FE2 /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
+		A02597CD1E21797800C41FE2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Controller/DetailViewController.swift; sourceTree = "<group>"; };
+		A0DF1FC11E217EF20027F0C2 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +158,8 @@
 				A02597AB1E20F87C00C41FE2 /* KingsTableViewController.swift */,
 				A02597BE1E21020F00C41FE2 /* DataController.swift */,
 				A02597C21E2143A200C41FE2 /* ScoringEngine.swift */,
+				A02597C91E216BAE00C41FE2 /* UtilitiesController.swift */,
+				A02597CD1E21797800C41FE2 /* DetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -168,6 +177,8 @@
 		A02597C41E21471200C41FE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0DF1FC11E217EF20027F0C2 /* fontawesome-webfont.ttf */,
+				A02597CB1E216F4600C41FE2 /* filter.png */,
 				A02597C71E21519600C41FE2 /* crown.png */,
 				A025977E1E20EC0E00C41FE2 /* LaunchScreen.storyboard */,
 				A02597791E20EC0E00C41FE2 /* Main.storyboard */,
@@ -282,6 +293,7 @@
 			files = (
 				A02597801E20EC0E00C41FE2 /* LaunchScreen.storyboard in Resources */,
 				A02597C81E21519600C41FE2 /* crown.png in Resources */,
+				A02597CC1E216F4600C41FE2 /* filter.png in Resources */,
 				A025977D1E20EC0E00C41FE2 /* Assets.xcassets in Resources */,
 				A025977B1E20EC0E00C41FE2 /* Main.storyboard in Resources */,
 			);
@@ -311,7 +323,9 @@
 				A02597761E20EC0E00C41FE2 /* AppDelegate.swift in Sources */,
 				A02597AC1E20F87C00C41FE2 /* AppConstants.swift in Sources */,
 				A02597C61E21475B00C41FE2 /* KingTableViewCell.swift in Sources */,
+				A02597CE1E21797800C41FE2 /* DetailViewController.swift in Sources */,
 				A02597B01E20F89800C41FE2 /* Battle.swift in Sources */,
+				A02597CA1E216BAE00C41FE2 /* UtilitiesController.swift in Sources */,
 				A02597B31E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodeld in Sources */,
 				A02597AE1E20F87C00C41FE2 /* KingsTableViewController.swift in Sources */,
 				A02597BF1E21020F00C41FE2 /* DataController.swift in Sources */,
@@ -549,6 +563,7 @@
 				A025979C1E20EC0E00C41FE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A025979D1E20EC0E00C41FE2 /* Build configuration list for PBXNativeTarget "WesterosAtWarTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +572,7 @@
 				A025979F1E20EC0E00C41FE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A02597A01E20EC0E00C41FE2 /* Build configuration list for PBXNativeTarget "WesterosAtWarUITests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +581,7 @@
 				A02597A21E20EC0E00C41FE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

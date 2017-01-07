@@ -17,8 +17,11 @@ class KingTableViewCell : UITableViewCell {
     @IBOutlet weak var rating: UILabel!
     
     override func awakeFromNib() {
-        self.kingIcon.layer.cornerRadius = self.kingIcon.frame.size.width / 2;
+        self.kingIcon.layer.cornerRadius = self.kingIcon.frame.size.height / 2;
         self.kingIcon.clipsToBounds = true;
+        self.kingName.adjustsFontSizeToFitWidth = true
+        self.battleStrength.adjustsFontSizeToFitWidth = true
+        self.rating.adjustsFontSizeToFitWidth = true
     }
     
 }

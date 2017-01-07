@@ -52,4 +52,17 @@ struct coreDataBaseConstants{
     static let defenderKing = "defenderKing"
     static let kingName = "kingName"
     static let kingTableName = "King"
+    static let winnerKey = "winner"
 }
+
+struct colorConstants{
+    static let themeBlue = "#2AAAE3"
+    static let themeVariantDarkBlue = "#278AE5"
+}
+
+
+
+struct FontAwesomeCodes {
+    static let backIcon = "\u{f104}"
+}
+
