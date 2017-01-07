@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Darwin
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,76 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
-        let nController = NetworkController()
-        nController.makeWebServiceCall(AppConstants.baseUrl, method: AppConstants.httpGetMethod, callback: {(response: NSData?, error: NSError?) -> Void in
-            if (response != nil){
-                self.loadBattleModels(response!)
-            }
-        })
-        
         return true
-    }
-    
-    
-    func loadBattleModels(response : NSData){
-        let objectContext = DataController.sharedInstance.managedObjectContext
-        do {
-            let rawData = try NSJSONSerialization.JSONObjectWithData(response, options: .AllowFragments)
-            if let responseArray = rawData as? [Dictionary<String,AnyObject>] {
-                for item in responseArray{
-                    self.populateBattleEntity(item)
-                }
-                do {
-                    try objectContext.save()
-                    self.fetchBattleDetails()
-                } catch {
-                    fatalError("Failure to save context: \(error)")
-                }
-            }
-        }
-        catch let error as NSError {
-            print(error.description)
-        }
-    }
-    
-    func populateBattleEntity(battleDetails : Dictionary <String, AnyObject>){
-        let managedObjectContext = DataController.sharedInstance.managedObjectContext
-        let battleObject = NSEntityDescription.insertNewObjectForEntityForName(coreDataBaseConstants.battleTableName, inManagedObjectContext: managedObjectContext) as! Battle
-        battleObject.initWithResponse(battleDetails)
-    }
-    
-    
-    func fetchBattleDetails(){
-        let objectContext = DataController.sharedInstance.managedObjectContext
-        let battlesFetch = NSFetchRequest(entityName: coreDataBaseConstants.battleTableName)
-        do {
-            let fetchedBattles = try objectContext.executeFetchRequest(battlesFetch) as! [Battle]
-            for battle in fetchedBattles{
-                self.calculateRatingForKing(battle)
-            }
-            
-        } catch {
-            fatalError("Failed to fetch battles: \(error)")
-        }
-    }
-    
-    
-    func calculateRatingForKing(battleDetails : Battle){
-        let moc = DataController.sharedInstance.managedObjectContext
-        do {
-            let kingFetchRequest = NSFetchRequest(entityName: coreDataBaseConstants.kingTableName)
-            kingFetchRequest.predicate = NSPredicate(format: coreDataBaseConstants.kingName + " == %@", (battleDetails.attckerKing ?? ""))
-            let battleFetchRequest = NSFetchRequest(entityName: coreDataBaseConstants.battleTableName)
-            battleFetchRequest.predicate = NSPredicate(format: "attckerKing == %@ OR defenderKing == %@", (battleDetails.attckerKing ?? ""), (battleDetails.attckerKing ?? ""))
-            let fetchedKings = try moc.executeFetchRequest(kingFetchRequest) as! [King]
-            if (fetchedKings.count == 0){
-                let fetchedBattles = try moc.executeFetchRequest(battleFetchRequest) as! [Battle]
-                
-            }
-        } catch {
-            fatalError("Failed to fetch battles with king name as search spec: \(error)")
-        }
     }
     
     func applicationWillResignActive(application: UIApplication) {

@@ -15,11 +15,14 @@
 		A02597961E20EC0E00C41FE2 /* WesterosAtWarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597951E20EC0E00C41FE2 /* WesterosAtWarUITests.swift */; };
 		A02597AC1E20F87C00C41FE2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597A91E20F87C00C41FE2 /* AppConstants.swift */; };
 		A02597AD1E20F87C00C41FE2 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597AA1E20F87C00C41FE2 /* NetworkController.swift */; };
-		A02597AE1E20F87C00C41FE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597AB1E20F87C00C41FE2 /* ViewController.swift */; };
+		A02597AE1E20F87C00C41FE2 /* KingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597AB1E20F87C00C41FE2 /* KingsTableViewController.swift */; };
 		A02597B01E20F89800C41FE2 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597AF1E20F89800C41FE2 /* Battle.swift */; };
 		A02597B31E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A02597B11E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodeld */; };
 		A02597BB1E21004000C41FE2 /* King.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597BA1E21004000C41FE2 /* King.swift */; };
 		A02597BF1E21020F00C41FE2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597BE1E21020F00C41FE2 /* DataController.swift */; };
+		A02597C31E2143A200C41FE2 /* ScoringEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597C21E2143A200C41FE2 /* ScoringEngine.swift */; };
+		A02597C61E21475B00C41FE2 /* KingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597C51E21475B00C41FE2 /* KingTableViewCell.swift */; };
+		A02597C81E21519600C41FE2 /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = A02597C71E21519600C41FE2 /* crown.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +57,14 @@
 		A02597971E20EC0E00C41FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A02597A91E20F87C00C41FE2 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConstants.swift; path = Controller/AppConstants.swift; sourceTree = "<group>"; };
 		A02597AA1E20F87C00C41FE2 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = Controller/NetworkController.swift; sourceTree = "<group>"; };
-		A02597AB1E20F87C00C41FE2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		A02597AB1E20F87C00C41FE2 /* KingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KingsTableViewController.swift; path = Controller/KingsTableViewController.swift; sourceTree = "<group>"; };
 		A02597AF1E20F89800C41FE2 /* Battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Battle.swift; path = Models/Battle.swift; sourceTree = "<group>"; };
 		A02597B21E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WesterosAtWar.xcdatamodel; sourceTree = "<group>"; };
 		A02597BA1E21004000C41FE2 /* King.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = King.swift; path = Models/King.swift; sourceTree = "<group>"; };
 		A02597BE1E21020F00C41FE2 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataController.swift; path = Controller/DataController.swift; sourceTree = "<group>"; };
+		A02597C21E2143A200C41FE2 /* ScoringEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoringEngine.swift; path = Controller/ScoringEngine.swift; sourceTree = "<group>"; };
+		A02597C51E21475B00C41FE2 /* KingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KingTableViewCell.swift; path = View/KingTableViewCell.swift; sourceTree = "<group>"; };
+		A02597C71E21519600C41FE2 /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +115,11 @@
 		A02597741E20EC0E00C41FE2 /* WesterosAtWar */ = {
 			isa = PBXGroup;
 			children = (
+				A02597C41E21471200C41FE2 /* View */,
 				A02597A81E20F84800C41FE2 /* Models */,
 				A02597A31E20F0F600C41FE2 /* Controller */,
 				A02597751E20EC0E00C41FE2 /* AppDelegate.swift */,
-				A02597791E20EC0E00C41FE2 /* Main.storyboard */,
 				A025977C1E20EC0E00C41FE2 /* Assets.xcassets */,
-				A025977E1E20EC0E00C41FE2 /* LaunchScreen.storyboard */,
 				A02597811E20EC0E00C41FE2 /* Info.plist */,
 			);
 			path = WesterosAtWar;
@@ -143,8 +148,9 @@
 			children = (
 				A02597A91E20F87C00C41FE2 /* AppConstants.swift */,
 				A02597AA1E20F87C00C41FE2 /* NetworkController.swift */,
-				A02597AB1E20F87C00C41FE2 /* ViewController.swift */,
+				A02597AB1E20F87C00C41FE2 /* KingsTableViewController.swift */,
 				A02597BE1E21020F00C41FE2 /* DataController.swift */,
+				A02597C21E2143A200C41FE2 /* ScoringEngine.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -157,6 +163,17 @@
 				A02597BA1E21004000C41FE2 /* King.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		A02597C41E21471200C41FE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A02597C71E21519600C41FE2 /* crown.png */,
+				A025977E1E20EC0E00C41FE2 /* LaunchScreen.storyboard */,
+				A02597791E20EC0E00C41FE2 /* Main.storyboard */,
+				A02597C51E21475B00C41FE2 /* KingTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A02597801E20EC0E00C41FE2 /* LaunchScreen.storyboard in Resources */,
+				A02597C81E21519600C41FE2 /* crown.png in Resources */,
 				A025977D1E20EC0E00C41FE2 /* Assets.xcassets in Resources */,
 				A025977B1E20EC0E00C41FE2 /* Main.storyboard in Resources */,
 			);
@@ -292,12 +310,14 @@
 			files = (
 				A02597761E20EC0E00C41FE2 /* AppDelegate.swift in Sources */,
 				A02597AC1E20F87C00C41FE2 /* AppConstants.swift in Sources */,
+				A02597C61E21475B00C41FE2 /* KingTableViewCell.swift in Sources */,
 				A02597B01E20F89800C41FE2 /* Battle.swift in Sources */,
 				A02597B31E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodeld in Sources */,
-				A02597AE1E20F87C00C41FE2 /* ViewController.swift in Sources */,
+				A02597AE1E20F87C00C41FE2 /* KingsTableViewController.swift in Sources */,
 				A02597BF1E21020F00C41FE2 /* DataController.swift in Sources */,
 				A02597AD1E20F87C00C41FE2 /* NetworkController.swift in Sources */,
 				A02597BB1E21004000C41FE2 /* King.swift in Sources */,
+				A02597C31E2143A200C41FE2 /* ScoringEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

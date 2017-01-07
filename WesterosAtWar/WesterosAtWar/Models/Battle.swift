@@ -29,6 +29,8 @@ class Battle : NSManagedObject {
     @NSManaged var region : String?
     @NSManaged var summer : String?
     @NSManaged var year : NSNumber?
+    @NSManaged var winner : String?
+    @NSManaged var loser : String?
     
     func initWithResponse(battleDetails : Dictionary<String,AnyObject>){
         self.battleName = (battleDetails[jsonResponseConstants.name] as? String) ?? ""
@@ -37,24 +39,36 @@ class Battle : NSManagedObject {
         //Append attackers
         self.attackers = ((battleDetails[jsonResponseConstants.attacker1] as? String)) ?? ""
         if let attacker2 = battleDetails[jsonResponseConstants.attacker2] as? String{
-            self.attackers = self.attackers! + "," + attacker2
+            if (attacker2.characters.count > 0){
+                self.attackers = self.attackers! + "," + attacker2
+            }
         }
         if let attacker3 = battleDetails[jsonResponseConstants.attacker3] as? String{
-            self.attackers = self.attackers! + "," + attacker3
+            if (attacker3.characters.count > 0){
+                self.attackers = self.attackers! + "," + attacker3
+            }
         }
         if let attacker4 = battleDetails[jsonResponseConstants.attacker4] as? String{
-            self.attackers = self.attackers! + "," + attacker4
+            if (attacker4.characters.count > 0){
+                self.attackers = self.attackers! + "," + attacker4
+            }
         }
         //Append defenders
         self.defenders = ((battleDetails[jsonResponseConstants.defender1] as? String)) ?? ""
         if let defender2 = battleDetails[jsonResponseConstants.defender2] as? String{
-            self.attackers = self.attackers! + "," + defender2
+            if (defender2.characters.count > 0){
+                self.attackers = self.attackers! + "," + defender2
+            }
         }
         if let defender3 = battleDetails[jsonResponseConstants.defender3] as? String{
-            self.attackers = self.attackers! + "," + defender3
+            if (defender3.characters.count > 0){
+                self.attackers = self.attackers! + "," + defender3
+            }
         }
         if let defender4 = battleDetails[jsonResponseConstants.defender4] as? String{
-            self.attackers = self.attackers! + "," + defender4
+            if (defender4.characters.count > 0){
+                self.attackers = self.attackers! + "," + defender4
+            }
         }
         self.attackerSize = (battleDetails[jsonResponseConstants.attackerSize] as? String) ?? ""
         self.attckerKing = (battleDetails[jsonResponseConstants.attackerKing] as? String) ?? ""
@@ -70,6 +84,15 @@ class Battle : NSManagedObject {
         self.region = (battleDetails[jsonResponseConstants.region] as? String) ?? ""
         self.summer = (battleDetails[jsonResponseConstants.summer] as? String) ?? ""
         self.year = (battleDetails[jsonResponseConstants.year] as? NSNumber) ?? 1
+        
+        if (self.attackerOutcome == "win"){
+            self.winner = self.attckerKing
+            self.loser = self.defenderKing
+        }else if (self.attackerOutcome == "loss"){
+            self.winner = self.defenderKing
+            self.loser = self.attckerKing
+        }
+        
     }
     
 }

@@ -12,5 +12,16 @@ import CoreData
 class King : NSManagedObject {
     @NSManaged var kingName : String?
     @NSManaged var rating : NSNumber?
-    @NSManaged var strength : String?
+    @NSManaged var attackVictory : NSNumber?
+    @NSManaged var defenseVictory : NSNumber?
+    @NSManaged var attackDefeat : NSNumber?
+    @NSManaged var defenseDefeat : NSNumber?
+    
+    func initWithResponse(rating : NSNumber, name : String, attackVictory : NSNumber, defenseVictory : NSNumber){
+        self.rating = rating
+        self.kingName = name
+        self.attackVictory = attackVictory
+        self.defenseVictory = defenseVictory
+    }
+    
 }
