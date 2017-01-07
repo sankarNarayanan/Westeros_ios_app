@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A02597761E20EC0E00C41FE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597751E20EC0E00C41FE2 /* AppDelegate.swift */; };
+		A025977B1E20EC0E00C41FE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02597791E20EC0E00C41FE2 /* Main.storyboard */; };
+		A025977D1E20EC0E00C41FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A025977C1E20EC0E00C41FE2 /* Assets.xcassets */; };
+		A02597801E20EC0E00C41FE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A025977E1E20EC0E00C41FE2 /* LaunchScreen.storyboard */; };
+		A025978B1E20EC0E00C41FE2 /* WesterosAtWarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025978A1E20EC0E00C41FE2 /* WesterosAtWarTests.swift */; };
+		A02597961E20EC0E00C41FE2 /* WesterosAtWarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597951E20EC0E00C41FE2 /* WesterosAtWarUITests.swift */; };
+		A02597AC1E20F87C00C41FE2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597A91E20F87C00C41FE2 /* AppConstants.swift */; };
+		A02597AD1E20F87C00C41FE2 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597AA1E20F87C00C41FE2 /* NetworkController.swift */; };
+		A02597AE1E20F87C00C41FE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597AB1E20F87C00C41FE2 /* ViewController.swift */; };
+		A02597B01E20F89800C41FE2 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597AF1E20F89800C41FE2 /* Battle.swift */; };
+		A02597B31E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A02597B11E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodeld */; };
+		A02597BB1E21004000C41FE2 /* King.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597BA1E21004000C41FE2 /* King.swift */; };
+		A02597BF1E21020F00C41FE2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02597BE1E21020F00C41FE2 /* DataController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A02597871E20EC0E00C41FE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A025976A1E20EC0E00C41FE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02597711E20EC0E00C41FE2;
+			remoteInfo = WesterosAtWar;
+		};
+		A02597921E20EC0E00C41FE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A025976A1E20EC0E00C41FE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02597711E20EC0E00C41FE2;
+			remoteInfo = WesterosAtWar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A02597721E20EC0E00C41FE2 /* WesterosAtWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WesterosAtWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02597751E20EC0E00C41FE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A025977A1E20EC0E00C41FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A025977C1E20EC0E00C41FE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A025977F1E20EC0E00C41FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A02597811E20EC0E00C41FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02597861E20EC0E00C41FE2 /* WesterosAtWarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WesterosAtWarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A025978A1E20EC0E00C41FE2 /* WesterosAtWarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WesterosAtWarTests.swift; sourceTree = "<group>"; };
+		A025978C1E20EC0E00C41FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02597911E20EC0E00C41FE2 /* WesterosAtWarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WesterosAtWarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02597951E20EC0E00C41FE2 /* WesterosAtWarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WesterosAtWarUITests.swift; sourceTree = "<group>"; };
+		A02597971E20EC0E00C41FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02597A91E20F87C00C41FE2 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConstants.swift; path = Controller/AppConstants.swift; sourceTree = "<group>"; };
+		A02597AA1E20F87C00C41FE2 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = Controller/NetworkController.swift; sourceTree = "<group>"; };
+		A02597AB1E20F87C00C41FE2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		A02597AF1E20F89800C41FE2 /* Battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Battle.swift; path = Models/Battle.swift; sourceTree = "<group>"; };
+		A02597B21E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WesterosAtWar.xcdatamodel; sourceTree = "<group>"; };
+		A02597BA1E21004000C41FE2 /* King.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = King.swift; path = Models/King.swift; sourceTree = "<group>"; };
+		A02597BE1E21020F00C41FE2 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataController.swift; path = Controller/DataController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A025976F1E20EC0E00C41FE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02597831E20EC0E00C41FE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A025978E1E20EC0E00C41FE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A02597691E20EC0E00C41FE2 = {
+			isa = PBXGroup;
+			children = (
+				A02597741E20EC0E00C41FE2 /* WesterosAtWar */,
+				A02597891E20EC0E00C41FE2 /* WesterosAtWarTests */,
+				A02597941E20EC0E00C41FE2 /* WesterosAtWarUITests */,
+				A02597731E20EC0E00C41FE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A02597731E20EC0E00C41FE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A02597721E20EC0E00C41FE2 /* WesterosAtWar.app */,
+				A02597861E20EC0E00C41FE2 /* WesterosAtWarTests.xctest */,
+				A02597911E20EC0E00C41FE2 /* WesterosAtWarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A02597741E20EC0E00C41FE2 /* WesterosAtWar */ = {
+			isa = PBXGroup;
+			children = (
+				A02597A81E20F84800C41FE2 /* Models */,
+				A02597A31E20F0F600C41FE2 /* Controller */,
+				A02597751E20EC0E00C41FE2 /* AppDelegate.swift */,
+				A02597791E20EC0E00C41FE2 /* Main.storyboard */,
+				A025977C1E20EC0E00C41FE2 /* Assets.xcassets */,
+				A025977E1E20EC0E00C41FE2 /* LaunchScreen.storyboard */,
+				A02597811E20EC0E00C41FE2 /* Info.plist */,
+			);
+			path = WesterosAtWar;
+			sourceTree = "<group>";
+		};
+		A02597891E20EC0E00C41FE2 /* WesterosAtWarTests */ = {
+			isa = PBXGroup;
+			children = (
+				A025978A1E20EC0E00C41FE2 /* WesterosAtWarTests.swift */,
+				A025978C1E20EC0E00C41FE2 /* Info.plist */,
+			);
+			path = WesterosAtWarTests;
+			sourceTree = "<group>";
+		};
+		A02597941E20EC0E00C41FE2 /* WesterosAtWarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A02597951E20EC0E00C41FE2 /* WesterosAtWarUITests.swift */,
+				A02597971E20EC0E00C41FE2 /* Info.plist */,
+			);
+			path = WesterosAtWarUITests;
+			sourceTree = "<group>";
+		};
+		A02597A31E20F0F600C41FE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A02597A91E20F87C00C41FE2 /* AppConstants.swift */,
+				A02597AA1E20F87C00C41FE2 /* NetworkController.swift */,
+				A02597AB1E20F87C00C41FE2 /* ViewController.swift */,
+				A02597BE1E21020F00C41FE2 /* DataController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A02597A81E20F84800C41FE2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A02597AF1E20F89800C41FE2 /* Battle.swift */,
+				A02597B11E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodeld */,
+				A02597BA1E21004000C41FE2 /* King.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A02597711E20EC0E00C41FE2 /* WesterosAtWar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A025979A1E20EC0E00C41FE2 /* Build configuration list for PBXNativeTarget "WesterosAtWar" */;
+			buildPhases = (
+				A025976E1E20EC0E00C41FE2 /* Sources */,
+				A025976F1E20EC0E00C41FE2 /* Frameworks */,
+				A02597701E20EC0E00C41FE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WesterosAtWar;
+			productName = WesterosAtWar;
+			productReference = A02597721E20EC0E00C41FE2 /* WesterosAtWar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A02597851E20EC0E00C41FE2 /* WesterosAtWarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A025979D1E20EC0E00C41FE2 /* Build configuration list for PBXNativeTarget "WesterosAtWarTests" */;
+			buildPhases = (
+				A02597821E20EC0E00C41FE2 /* Sources */,
+				A02597831E20EC0E00C41FE2 /* Frameworks */,
+				A02597841E20EC0E00C41FE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A02597881E20EC0E00C41FE2 /* PBXTargetDependency */,
+			);
+			name = WesterosAtWarTests;
+			productName = WesterosAtWarTests;
+			productReference = A02597861E20EC0E00C41FE2 /* WesterosAtWarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A02597901E20EC0E00C41FE2 /* WesterosAtWarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02597A01E20EC0E00C41FE2 /* Build configuration list for PBXNativeTarget "WesterosAtWarUITests" */;
+			buildPhases = (
+				A025978D1E20EC0E00C41FE2 /* Sources */,
+				A025978E1E20EC0E00C41FE2 /* Frameworks */,
+				A025978F1E20EC0E00C41FE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A02597931E20EC0E00C41FE2 /* PBXTargetDependency */,
+			);
+			name = WesterosAtWarUITests;
+			productName = WesterosAtWarUITests;
+			productReference = A02597911E20EC0E00C41FE2 /* WesterosAtWarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A025976A1E20EC0E00C41FE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Sankar Narayanan";
+				TargetAttributes = {
+					A02597711E20EC0E00C41FE2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A02597851E20EC0E00C41FE2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A02597711E20EC0E00C41FE2;
+					};
+					A02597901E20EC0E00C41FE2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A02597711E20EC0E00C41FE2;
+					};
+				};
+			};
+			buildConfigurationList = A025976D1E20EC0E00C41FE2 /* Build configuration list for PBXProject "WesterosAtWar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A02597691E20EC0E00C41FE2;
+			productRefGroup = A02597731E20EC0E00C41FE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A02597711E20EC0E00C41FE2 /* WesterosAtWar */,
+				A02597851E20EC0E00C41FE2 /* WesterosAtWarTests */,
+				A02597901E20EC0E00C41FE2 /* WesterosAtWarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A02597701E20EC0E00C41FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02597801E20EC0E00C41FE2 /* LaunchScreen.storyboard in Resources */,
+				A025977D1E20EC0E00C41FE2 /* Assets.xcassets in Resources */,
+				A025977B1E20EC0E00C41FE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02597841E20EC0E00C41FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A025978F1E20EC0E00C41FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A025976E1E20EC0E00C41FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02597761E20EC0E00C41FE2 /* AppDelegate.swift in Sources */,
+				A02597AC1E20F87C00C41FE2 /* AppConstants.swift in Sources */,
+				A02597B01E20F89800C41FE2 /* Battle.swift in Sources */,
+				A02597B31E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodeld in Sources */,
+				A02597AE1E20F87C00C41FE2 /* ViewController.swift in Sources */,
+				A02597BF1E21020F00C41FE2 /* DataController.swift in Sources */,
+				A02597AD1E20F87C00C41FE2 /* NetworkController.swift in Sources */,
+				A02597BB1E21004000C41FE2 /* King.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02597821E20EC0E00C41FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A025978B1E20EC0E00C41FE2 /* WesterosAtWarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A025978D1E20EC0E00C41FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02597961E20EC0E00C41FE2 /* WesterosAtWarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A02597881E20EC0E00C41FE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A02597711E20EC0E00C41FE2 /* WesterosAtWar */;
+			targetProxy = A02597871E20EC0E00C41FE2 /* PBXContainerItemProxy */;
+		};
+		A02597931E20EC0E00C41FE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A02597711E20EC0E00C41FE2 /* WesterosAtWar */;
+			targetProxy = A02597921E20EC0E00C41FE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A02597791E20EC0E00C41FE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A025977A1E20EC0E00C41FE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A025977E1E20EC0E00C41FE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A025977F1E20EC0E00C41FE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A02597981E20EC0E00C41FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A02597991E20EC0E00C41FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A025979B1E20EC0E00C41FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = WesterosAtWar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.WesterosAtWar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A025979C1E20EC0E00C41FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = WesterosAtWar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.WesterosAtWar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A025979E1E20EC0E00C41FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WesterosAtWarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.WesterosAtWarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WesterosAtWar.app/WesterosAtWar";
+			};
+			name = Debug;
+		};
+		A025979F1E20EC0E00C41FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WesterosAtWarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.WesterosAtWarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WesterosAtWar.app/WesterosAtWar";
+			};
+			name = Release;
+		};
+		A02597A11E20EC0E00C41FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WesterosAtWarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.WesterosAtWarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WesterosAtWar;
+			};
+			name = Debug;
+		};
+		A02597A21E20EC0E00C41FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WesterosAtWarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.WesterosAtWarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WesterosAtWar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A025976D1E20EC0E00C41FE2 /* Build configuration list for PBXProject "WesterosAtWar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02597981E20EC0E00C41FE2 /* Debug */,
+				A02597991E20EC0E00C41FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A025979A1E20EC0E00C41FE2 /* Build configuration list for PBXNativeTarget "WesterosAtWar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A025979B1E20EC0E00C41FE2 /* Debug */,
+				A025979C1E20EC0E00C41FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A025979D1E20EC0E00C41FE2 /* Build configuration list for PBXNativeTarget "WesterosAtWarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A025979E1E20EC0E00C41FE2 /* Debug */,
+				A025979F1E20EC0E00C41FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A02597A01E20EC0E00C41FE2 /* Build configuration list for PBXNativeTarget "WesterosAtWarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02597A11E20EC0E00C41FE2 /* Debug */,
+				A02597A21E20EC0E00C41FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A02597B11E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A02597B21E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodel */,
+			);
+			currentVersion = A02597B21E20F9EB00C41FE2 /* WesterosAtWar.xcdatamodel */;
+			name = WesterosAtWar.xcdatamodeld;
+			path = Models/WesterosAtWar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A025976A1E20EC0E00C41FE2 /* Project object */;
+}
